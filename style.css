@@ -1,0 +1,208 @@
+/***
+
+This CSS is auto/AI-generated and not really a good example (it's quite bad actually). 
+The focus on this lesson is the HTML, so don't read too much into this CSS! 
+
+***/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+.top-container {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding-top: 2.5rem;
+    display: block;
+}
+
+.top-container .xl-text {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.top-container .grey-sub {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.5;
+}
+
+.dark-strip {
+    background-color: #34495e;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-strip .horizontal-group {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.dark-strip a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.dark-strip a:hover {
+    color: #3498db;
+}
+
+.middle-wrapper {
+    display: flex;
+    max-width: 1100px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.left-side-panel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.white-box .lg-text {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.sm-grey-text {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.content-group img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.base-text {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.blue-button {
+    display: inline-block;
+    color: #fff;
+    background-color: #39a3eb;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.blue-button:hover {
+    background-color: #2980b9;
+}
+
+.right-side-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.side-white-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.side-white-box .md-text {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.side-white-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.side-white-box .base-text {
+    color: #555;
+    margin-bottom: 0;
+}
+
+.horizontal-group-vertical {
+    padding: 0;
+    margin: 0;
+}
+
+.group-element-border {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ecf0f1;
+    display: block;
+}
+
+.group-element-border:last-child {
+    border-bottom: none;
+}
+
+.side-white-box a {
+    color: #34495e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.side-white-box a:hover {
+    color: #3498db;
+}
+
+.bottom-container {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.bottom-container .base-text {
+    margin: 0;
+    color: #fff;
+}
