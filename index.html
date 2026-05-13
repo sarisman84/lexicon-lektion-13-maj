@@ -9,22 +9,23 @@
 </head>
 
 <body>
-    <div class="top-container">
-        <div class="xl-text">Tech News Today</div>
-        <div class="grey-sub">Your daily dose of technology updates.</div>
+    <header class="top-container">
+        <!-- not a very good H1 since it doesn't actually say anything about the page content -->
+        <h1 class="xl-text">Tech News Today</h1>
+        <span class="grey-sub">Your daily dose of technology updates.</span>
 
-        <div class="dark-strip">
-            <div class="horizontal-group">
-                <a class="group-element" href="#">Home</a>
-                <a class="group-element" href="#">Gadgets</a>
-                <a class="group-element" href="#">Software</a>
-                <a class="group-element" href="#">About</a>
-                <a class="group-element" href="#">Contact</a>
-            </div>
-        </div>
-    </div>
+        <nav class="dark-strip" aria-label="Main navigation">
+            <ul class="horizontal-group">
+                <li><a class="group-element" href="#">Home</a></li>
+                <li><a class="group-element" href="#">Gadgets</a></li>
+                <li><a class="group-element" href="#">Software</a></li>
+                <li><a class="group-element" href="#">About</a></li>
+                <li><a class="group-element" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="middle-wrapper">
-        <div class="left-side-panel">
+        <main class="left-side-panel">
             <div class="white-box">
                 <p class="lg-text">The Future of AI Assistants</p>
                 <div class="sm-grey-text">Published on April 27, 2026 by Jane Doe</div>
@@ -51,9 +52,9 @@
                     <a href="#" class="blue-button">Read full article</a>
                 </div>
             </div>
-        </div>
+        </main>
 
-        <div class="right-side-panel">
+        <aside class="right-side-panel">
             <div class="side-white-box">
                 <div class="md-text">About the Author</div>
                 <img src="https://picsum.photos/200/200?random=6" alt="Author photo">
@@ -77,12 +78,12 @@
                     <a class="group-element-border" href="https://www.yahoo.com">Yahoo</a>
                 </div>
             </div>
-        </div>
+        </aside>
     </div>
 
-    <div class="bottom-container">
+    <footer class="bottom-container">
         <div class="base-text">&copy; 2026 Tech News Today. All rights reserved.</div>
-    </div>
+    </footer>
 
 </body>
 
