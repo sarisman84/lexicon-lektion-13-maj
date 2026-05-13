@@ -9,13 +9,24 @@
 </head>
 
 <body>
+    <!-- Header directly under body is shown as banner landmark in the accessibility tree -->
+    <!-- It's usually good to wrap logo, main navigation or similar in a header. 
+     It makes styling easier and the page more accessible -->
     <header class="top-container">
-        <!-- not a very good H1 since it doesn't actually say anything about the page content -->
-        <a href="/"><span class="xl-text">Tech News Today</span></a>
+        <h1>
+            <a href="/">
+                <span class="xl-text">Tech News Today</span>
+            </a>
+        </h1>
         <span class="grey-sub">Your daily dose of technology updates.</span>
 
+        <!-- The aria-label attribute is used to provide a text description 
+         of the navigation menu for screen readers and assistive technologies. 
+         You don't need this if there is only one navigation menu on the page. -->
         <nav class="dark-strip" aria-label="Main navigation">
             <ul class="horizontal-group">
+                <!-- If there is a logo or such that links to the root/home page 
+                it might be better to remove the home link -->
                 <li><a class="group-element" href="#">Home</a></li>
                 <li><a class="group-element" href="#">Gadgets</a></li>
                 <li><a class="group-element" href="#">Software</a></li>
@@ -25,8 +36,23 @@
         </nav>
     </header>
     <div class="middle-wrapper">
+
+        <!-- Main should only be used once, for the main content of the page -->
+
         <main class="left-side-panel">
-            <h2>Our latest articles</h2>
+            <!-- heading for the list of articles is good for several reasons, 
+             it gives screenreaders a context and it's clearer what it is we show, 
+             but sometimes we want to hide it to not clutter the layout. We can do that with CSS. -->
+
+            <!-- Header isn't strictly needed if there is only a heading inside -->
+            <!-- if use with some other info that belongs to it we can use header to wrap -->
+            <!-- <header>
+                <h2>Our Latest Articles</h2>
+                <p>Here are some of our latest articles</p>
+            </header> -->
+
+            <!-- if the page is a sub page (not first page) a heading should be used, for example if we filter out a specific category -->
+            <!-- <h2>Articles about Hardware Reviews</h2> -->
             <article aria-labelledby="title-1" class="white-box">
                 <header>
                     <h3 id="title-1" class="lg-text">The Future of AI Assistants</h3>
@@ -34,8 +60,11 @@
                     </p>
                 </header>
 
+                <!-- The image could be a part of the section or header depending on the meaning or structure behind it -->
                 <img src="https://picsum.photos/500/250?random=4" alt="AI representation">
 
+                <!-- Section isn't strictly needed if there is only a single heading and paragraph inside-->
+                <!-- But if there are several sections wrapping these with it's headings might be a good idea -->
                 <section aria-labelledby="subtitle-1" class="content-group">
                     <h3 id="subtitle-1">Introduction</h3>
                     <p class="base-text">Artificial intelligence is rapidly evolving. We are now seeing assistants
@@ -54,21 +83,22 @@
                 <footer><a href="#" class="blue-button">Read full article</a></footer>
             </article>
 
-            <!-- should also be updated -->
+            <!-- In this example I chose a flat structure just to show that is valid too -->
+            <!-- Might be nice with the header for the heading/meta but it's not strictly needed  -->
             <article class="white-box">
                 <h2 class="lg-text">New Smartphone Released</h2>
-                <div class="sm-grey-text">Published on April 26, 2026 by John Smith</div>
-                <div class="content-group">
-                    <img src="https://picsum.photos/500/250?random=5" alt="Smartphone prototype">
-                    <div class="base-text">The latest flagship device from leading manufacturers features an
-                        incredible 100-hour battery life and a holographic display that completely redefines mobile
-                        interaction. Early reviews are praising its sleek design and unparalleled performance in
-                        mobile gaming.</div>
-                    <a href="#" class="blue-button">Read full article</a>
-                </div>
+                <p class="sm-grey-text">Published on <time datetime="2026-04-26">April 26, 2026</time> by John Smith</p>
+
+                <img src="https://picsum.photos/500/250?random=5" alt="Smartphone prototype">
+                <p class="base-text">The latest flagship device from leading manufacturers features an
+                    incredible 100-hour battery life and a holographic display that completely redefines mobile
+                    interaction. Early reviews are praising its sleek design and unparalleled performance in
+                    mobile gaming.</p>
+                <a href="#" class="blue-button">Read full article</a>
             </article>
         </main>
 
+        <!-- Aside is used for content separate, but related to the content it placed with -->
         <aside class="right-side-panel">
             <section class="side-white-box">
                 <h2 class="md-text">About the Author</h2>
@@ -79,6 +109,7 @@
 
             <section class="side-white-box">
                 <h2 class="md-text">Popular Categories</h2>
+                <!-- Use nav for important navigation link groups, such as site navigation or category navigation. -->
                 <nav>
                     <ul class="horizontal-group-vertical">
                         <li class="group-element-border"><a href="#">AI & Machine Learning</a></li>
@@ -87,12 +118,14 @@
                     </ul>
                 </nav>
             </section>
+
             <section class="side-white-box">
                 <h2 class="md-text">External links</h2>
+                <!-- Nav isn't used for external links, since they don't count as navigation -->
                 <ul class="horizontal-group-vertical">
-                    <li><a class="group-element-border" href="https://www.google.com">Google</a></li>
-                    <li><a class="group-element-border" href="https://www.bing.com">Bing</a></li>
-                    <li><a class="group-element-border" href="https://www.yahoo.com">Yahoo</a></li>
+                    <li class="group-element-border"><a href="https://www.google.com">Google</a></li>
+                    <li class="group-element-border"><a href="https://www.bing.com">Bing</a></li>
+                    <li class="group-element-border"><a href="https://www.yahoo.com">Yahoo</a></li>
                 </ul>
             </section>
         </aside>
